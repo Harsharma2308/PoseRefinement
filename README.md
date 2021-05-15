@@ -2,7 +2,7 @@
 A Review of 6D object pose refinement techniques
 
 
-[Project webite](https://www.notion.so/6D-Pose-Estimation-using-RGB-D-ed556e9e23f244bead9b648a3c4352f6)
+[Project webite]-(https://www.notion.so/6D-Pose-Estimation-using-RGB-D-ed556e9e23f244bead9b648a3c4352f6)
 
 
 

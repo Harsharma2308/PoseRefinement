@@ -99,7 +99,7 @@ for i, data in enumerate(testdataloader, 0):
 
     inner_time = time.time()
     pred_r, pred_t, pred_c, emb = estimator(img, points, choose, idx, mask)
-
+    
     '''
     points, choose, img, target, model_points, idx = Variable(points).cuda(), \
                                                      Variable(choose).cuda(), \
@@ -131,6 +131,7 @@ for i, data in enumerate(testdataloader, 0):
         my_t = my_t_last
         my_r_unrefined = quaternion_matrix(my_r)[:3, :3]
         my_t_unrefined = my_t + 0
+        emb = last_emb
 
     ICP = False
     if ICP:
@@ -191,7 +192,7 @@ for i, data in enumerate(testdataloader, 0):
 
     my_r_last = my_r + 0
     my_t_last = my_t + 0
-        
+    last_emb = emb
     
 
     post_refineement_ICP = False
